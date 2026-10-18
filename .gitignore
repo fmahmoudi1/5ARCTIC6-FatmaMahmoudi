@@ -1,0 +1,22 @@
+# Maven / Java
+**/target/
+*.class
+*.log
+
+# Angular / Node.js
+**/node_modules/
+**/dist/
+**/.angular/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# IDE
+.idea/
+.vscode/
+
+# System
+.DS_Store
+Thumbs.db

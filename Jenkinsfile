@@ -8,10 +8,11 @@ pipeline {
             }
         }
 
-        stage('Hello DevOps') {
+        stage('Build and Test') {
             steps {
-                echo 'Jenkins has successfully loaded our pipeline!'
-                echo 'Next: Maven build, tests and SonarQube.'
+                dir('backend') {
+                    sh './mvnw clean test'
+                }
             }
         }
     }
